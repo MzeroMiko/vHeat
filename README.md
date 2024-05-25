@@ -7,7 +7,9 @@
 
 [Yaowei Wang](https://scholar.google.com.hk/citations?user=o_DllmIAAAAJ&hl=zh-CN&oi=ao)<sup>2</sup>, [Qixiang Ye](https://scholar.google.com.hk/citations?user=tjEfgsEAAAAJ&hl=zh-CN&oi=ao)<sup>1</sup>, [Yunjie Tian](https://sunsmarterjie.github.io/)<sup>1</sup>
 
-<sup>1</sup>  University of Chinese Academy of Sciences, <sup>2</sup> PengCheng Lab.
+<sup>1</sup> University of Chinese Academy of Sciences, <sup>2</sup> PengCheng Lab.
+
+<sup>*</sup> Equal Contributions
 
 Paper: ([?](?))
 
