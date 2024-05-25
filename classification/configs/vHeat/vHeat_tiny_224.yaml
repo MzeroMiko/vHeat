@@ -1,0 +1,14 @@
+MODEL:
+  TYPE: vHeat
+  NAME: vHeat_tiny
+  DROP_PATH_RATE: 0.1
+  VSSM:
+    EMBED_DIM: 96
+    DEPTHS: [ 2, 2, 6, 2 ]
+    POST_NORM: True
+TRAIN:
+  BASE_LR: 5.e-4
+  WEIGHT_DECAY: 0.08
+SAVE_FREQ: 10
+DATA:
+  IMG_SIZE: 224

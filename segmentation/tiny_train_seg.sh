@@ -1,0 +1,1 @@
+export CONFIG=upernet_vheat_160k_ade20k_512x512_tiny.py GPUS=8 NNODES=1 NODE_RANK=0; PYTHONPATH="$PWD":$PYTHONPATH python -m torch.distributed.launch --nnodes=$NNODES --node_rank=$NODE_RANK --nproc_per_node=$GPUS ./tools/train.py $CONFIG --work-dir path/to/work_dir --launcher pytorch
