@@ -19,7 +19,7 @@ A fundamental problem in learning robust and expressive visual representations l
 ## Main Results
 
 :book: 
-***Checkpoint and ***
+***Checkpoint and log files will be released soon***
 
 ### **Classification on ImageNet-1K with VMambav2**
 
