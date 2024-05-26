@@ -7,6 +7,7 @@ model = dict(
         type='MMDET_VHEAT',
         drop_path=0.1,
         post_norm=True,
+        layer_scale=1.e-5, 
         depths=(2, 2, 6, 2),
         dims=96,
         out_indices=(0, 1, 2, 3),

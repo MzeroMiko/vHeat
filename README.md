@@ -3,11 +3,13 @@
 <h1>vHeat</h1>
 <h3>vHeat: Building Vision Models upon Heat Conduction</h3>
 
-[ZhaoZhi Wang](https://github.com/MzeroMiko)<sup>1,2*</sup>, [Yue Liu](https://github.com/MzeroMiko)<sup>1*</sup>, [Yunfan Liu](https://scholar.google.com.hk/citations?user=YPL33G0AAAAJ&hl=zh-CN&oi=ao)<sup>1</sup>, [Hongtian Yu](https://github.com/yuhongtian17)<sup>1</sup>, 
+[ZhaoZhi Wang](https://scholar.google.com/citations?user=CkDanj8AAAAJ&hl=zh-CN&oi=ao)<sup>1,2*</sup>, [Yue Liu](https://github.com/MzeroMiko)<sup>1*</sup>, [Yunfan Liu](https://scholar.google.com.hk/citations?user=YPL33G0AAAAJ&hl=zh-CN&oi=ao)<sup>1</sup>, [Hongtian Yu](https://github.com/yuhongtian17)<sup>1</sup>, 
 
-[Yaowei Wang](https://scholar.google.com.hk/citations?user=o_DllmIAAAAJ&hl=zh-CN&oi=ao)<sup>2</sup>, [Qixiang Ye](https://scholar.google.com.hk/citations?user=tjEfgsEAAAAJ&hl=zh-CN&oi=ao)<sup>1</sup>, [Yunjie Tian](https://sunsmarterjie.github.io/)<sup>1</sup>
+[Yaowei Wang](https://scholar.google.com.hk/citations?user=o_DllmIAAAAJ&hl=zh-CN&oi=ao)<sup>2,3</sup>, [Qixiang Ye](https://scholar.google.com.hk/citations?user=tjEfgsEAAAAJ&hl=zh-CN&oi=ao)<sup>1,2</sup>, [Yunjie Tian](https://sunsmarterjie.github.io/)<sup>1</sup>
 
-<sup>1</sup> University of Chinese Academy of Sciences, <sup>2</sup> PengCheng Lab.
+<sup>1</sup> University of Chinese Academy of Sciences, <sup>2</sup> Peng Cheng Laboratory,
+
+<sup>3</sup> Harbin Institute of Technology (Shenzhen)
 
 <sup>*</sup> Equal Contributions
 
@@ -23,7 +25,7 @@ A fundamental problem in learning robust and expressive visual representations l
 :book: 
 ***Checkpoint and log files will be released soon***
 
-### **Classification on ImageNet-1K with VMambav2**
+### **Classification on ImageNet-1K with vHeat**
 
 | name | pretrain | resolution |acc@1 | #params | FLOPs | Throughput | configs/logs/ckpts |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---:|
@@ -38,34 +40,34 @@ A fundamental problem in learning robust and expressive visual representations l
 * *Throughput is test on `pytorch2.0 + cuda12.1 + A100 + AMD EPYC 7542 CPU`.*
 * *We use ema because our model is still under development.*
 
-### **Object Detection on COCO with VMambav2**
+### **Object Detection on COCO with vHeat**
   
 | Backbone | #params | FLOPs | Detector | box mAP | mask mAP | configs/logs/ckpts |
 | :---: | :---: | :---: | :---: | :---: | :---: |:---: |
 | Swin-T | 48M | 267G | MaskRCNN@1x | 42.7| 39.3 |-- |-- |
-| VMamba-T | 53M | 286G | MaskRCNN@1x | 45.1| 41.0 | [config](detection/configs/vheat/mask_rcnn_vssm_fpn_coco_tiny.py)/[log](#)/[ckpt](#) |
+| vHeat-T | 53M | 286G | MaskRCNN@1x | 45.1| 41.0 | [config](detection/configs/vheat/mask_rcnn_vssm_fpn_coco_tiny.py)/[log](#)/[ckpt](#) |
 | Swin-S | 69M | 354G | MaskRCNN@1x | 44.8| 40.9 |-- |-- |
-| VMamba-S | 74M | 377G | MaskRCNN@1x | 46.8| 42.3 | [config](detection/configs/vheat/mask_rcnn_vssm_fpn_coco_small.py)/[log](#)/[ckpt](#) |
+| vHeat-S | 74M | 377G | MaskRCNN@1x | 46.8| 42.3 | [config](detection/configs/vheat/mask_rcnn_vssm_fpn_coco_small.py)/[log](#)/[ckpt](#) |
 | Swin-B | 107M | 496G | MaskRCNN@1x | 46.9| 42.3 |-- |-- |
-| VMamba-B | 115M | 526G | MaskRCNN@1x | 47.7 | 43.0 | [config](detection/configs/vheat/mask_rcnn_vssm_fpn_coco_base.py)/[log](#)/[ckpt](#) |
+| vHeat-B | 115M | 526G | MaskRCNN@1x | 47.7 | 43.0 | [config](detection/configs/vheat/mask_rcnn_vssm_fpn_coco_base.py)/[log](#)/[ckpt](#) |
 | Swin-T | 48M | 267G | MaskRCNN@3x | 46.0| 41.6 |-- |-- |
-| VMamba-T | 53M | 286G | MaskRCNN@3x | 47.2| 42.4 | [config](detection/configs/vheat/mask_rcnn_vssm_fpn_coco_tiny1_ms_3x.py)/[log](h#)/[ckpt](#) |
+| vHeat-T | 53M | 286G | MaskRCNN@3x | 47.2| 42.4 | [config](detection/configs/vheat/mask_rcnn_vssm_fpn_coco_tiny1_ms_3x.py)/[log](h#)/[ckpt](#) |
 | Swin-S | 69M | 354G | MaskRCNN@3x | 48.2| 43.2 |-- |-- |
-| VMamba-S | 74M | 377G | MaskRCNN@3x | 48.8| 43.7 | [config](detection/configs/vheat/mask_rcnn_vssm_fpn_coco_small_ms_3x.py)/[log](#)/[ckpt](#) |
+| vHeat-S | 74M | 377G | MaskRCNN@3x | 48.8| 43.7 | [config](detection/configs/vheat/mask_rcnn_vssm_fpn_coco_small_ms_3x.py)/[log](#)/[ckpt](#) |
 
 * *Models in this subsection is initialized from the models trained in `classfication`.*
 
 
-### **Semantic Segmentation on ADE20K with VMambav2**
+### **Semantic Segmentation on ADE20K with vHeat**
 
 | Backbone | Input|  #params | FLOPs | Segmentor | mIoU(SS) | configs/logs/ckpts |
 | :---: | :---: | :---: | :---: | :---: | :---: |:---: |
 | Swin-T | 512x512 | 60M | 945G | UperNet@160k | 44.4| -- | -- |
-| VMamba-T| 512x512 | 62M | 948G | UperNet@160k | 46.9| [config](segmentation/configs/vheat/upernet_vssm_4xb4-160k_ade20k-512x512_tiny.py)/[log](#)/[ckpt](#) |
+| vHeat-T| 512x512 | 62M | 948G | UperNet@160k | 46.9| [config](segmentation/configs/vheat/upernet_vssm_4xb4-160k_ade20k-512x512_tiny.py)/[log](#)/[ckpt](#) |
 | Swin-S | 512x512 | 81M | 1039G | UperNet@160k | 47.6| -- | -- |
-| VMamba-S| 512x512 | 82M | 1028G | UperNet@160k | 49.0|[config](segmentation/configs/vheat/upernet_vssm_4xb4-160k_ade20k-512x512_small.py)/[log](#)/[ckpt](#) |
+| vHeat-S| 512x512 | 82M | 1028G | UperNet@160k | 49.0|[config](segmentation/configs/vheat/upernet_vssm_4xb4-160k_ade20k-512x512_small.py)/[log](#)/[ckpt](#) |
 | Swin-B | 512x512 | 121M | 1188G | UperNet@160k | 48.1|-- |
-| VMamba-B| 512x512 | 129M | 1219G | UperNet@160k | 49.6|[config](segmentation/configs/vheat/upernet_vssm_4xb4-160k_ade20k-512x512_base.py)/[log](#)/[ckpt](#) |
+| vHeat-B| 512x512 | 129M | 1219G | UperNet@160k | 49.6|[config](segmentation/configs/vheat/upernet_vssm_4xb4-160k_ade20k-512x512_base.py)/[log](#)/[ckpt](#) |
 
 
 * *Models in this subsection is initialized from the models trained in `classfication`.*
@@ -87,8 +89,8 @@ cd vHeat
 ***Create and activate a new conda environment***
 
 ```bash
-conda create -n vmamba
-conda activate vmamba
+conda create -n vHeat
+conda activate vHeat
 ```
 
 ***Install Dependencies***
@@ -112,13 +114,13 @@ pip install mmdet==3.3.0 mmsegmentation==1.2.2 mmpretrain==1.2.0
 To train vHeat models for classification on ImageNet, use the following commands for different configurations:
 
 ```bash
-python -m torch.distributed.launch --nnodes=1 --node_rank=0 --nproc_per_node=8 --master_addr="127.0.0.1" --master_port=29501 main.py --cfg </path/to/config> --batch-size 128 --data-path </path/of/dataset> --output /tmp
+python -m torch.distributed.launch --nnodes=1 --node_rank=0 --nproc_per_node=8 --master_addr="127.0.0.1" --master_port=29501 main.py --cfg </path/to/config> --batch-size 128 --data-path </path/to/dataset> --output /tmp
 ```
 
-If you only want to test the performance (together with params and flops):
+If you only want to test the performance (together with params and FLOPs):
 
 ```bash
-python -m torch.distributed.launch --nnodes=1 --node_rank=0 --nproc_per_node=1 --master_addr="127.0.0.1" --master_port=29501 main.py --cfg </path/to/config> --batch-size 128 --data-path </path/of/dataset> --output /tmp --pretrained </path/of/checkpoint>
+python -m torch.distributed.launch --nnodes=1 --node_rank=0 --nproc_per_node=1 --master_addr="127.0.0.1" --master_port=29501 main.py --cfg </path/to/config> --batch-size 128 --data-path </path/to/dataset> --output /tmp --resume </path/to/checkpoint> --eval --model_ema False
 ```
 
 ***please refer to [modelcard](./modelcard.sh) for more details.***
