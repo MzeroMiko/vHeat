@@ -29,9 +29,9 @@ A fundamental problem in learning robust and expressive visual representations l
 
 | name | pretrain | resolution |acc@1 | #params | FLOPs | Throughput | configs/logs/ckpts |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---:|
-| Swin-T | ImageNet-1K | 224x224 | 81.2 | 28M | 4.5G | -- | 
-| Swin-S | ImageNet-1K | 224x224 | 83.2 | 50M | 8.7G | -- |
-| Swin-B | ImageNet-1K | 224x224 | 83.5 | 88M | 15.4G | -- |
+| Swin-T | ImageNet-1K | 224x224 | 81.2 | 29M | 4.5G | 1244 | 
+| Swin-S | ImageNet-1K | 224x224 | 83.0 | 50M | 8.7G | 728 |
+| Swin-B | ImageNet-1K | 224x224 | 83.5 | 89M | 15.4G | 458 |
 | vHeat-T | ImageNet-1K | 224x224 | 82.2 | 29M | 4.6G | 1514 | [config](classification/configs/vHeat/vHeat_tiny_224.yaml)/[log](#)/[ckpt](#) |
 | vHeat-S | ImageNet-1K | 224x224 | 83.6 | 50M | 8.5G | 945 | [config](classification/configs/vHeat/vHeat_small_224.yaml)/[log](#)/[ckpt](#) |
 | vHeat-B | ImageNet-1K | 224x224 | 83.9 | 87M | 14.9G | 661 | [config](classification/configs/vHeat/vHeat_base_224.yaml)/[log](#)/[ckpt](#) |
