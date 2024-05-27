@@ -114,7 +114,7 @@ pip install mmdet==3.3.0 mmsegmentation==1.2.2 mmpretrain==1.2.0
 To train vHeat models for classification on ImageNet, use the following commands for different configurations:
 
 ```bash
-python -m torch.distributed.launch --nnodes=1 --node_rank=0 --nproc_per_node=8 --master_addr="127.0.0.1" --master_port=29501 main.py --cfg </path/to/config> --batch-size 128 --data-path </path/to/dataset> --output /tmp
+python -m torch.distributed.launch --nnodes=1 --node_rank=0 --nproc_per_node=16 --master_addr="127.0.0.1" --master_port=29501 main.py --cfg </path/to/config> --batch-size 128 --data-path </path/to/dataset> --output /tmp
 ```
 
 If you only want to test the performance (together with params and FLOPs):
