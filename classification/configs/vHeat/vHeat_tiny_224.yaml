@@ -2,7 +2,7 @@ MODEL:
   TYPE: vHeat
   NAME: vHeat_tiny
   DROP_PATH_RATE: 0.1
-  VSSM:
+  VHEAT:
     EMBED_DIM: 96
     DEPTHS: [ 2, 2, 6, 2 ]
     LAYER_SCALE: 1.e-5
