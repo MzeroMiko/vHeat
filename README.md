@@ -13,7 +13,7 @@
 
 <sup>*</sup> Equal Contributions
 
-Paper: ([?](?))
+Paper: ([2405.16555](https://arxiv.org/pdf/2405.16555))
 
 </div>
 
