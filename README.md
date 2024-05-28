@@ -33,8 +33,8 @@ A fundamental problem in learning robust and expressive visual representations l
 | Swin-S | ImageNet-1K | 224x224 | 83.0 | 50M | 8.7G | 728 |
 | Swin-B | ImageNet-1K | 224x224 | 83.5 | 89M | 15.4G | 458 |
 | vHeat-T | ImageNet-1K | 224x224 | 82.2 | 29M | 4.6G | 1514 | [config](classification/configs/vHeat/vHeat_tiny_224.yaml)/[log](#)/[ckpt](#) |
-| vHeat-S | ImageNet-1K | 224x224 | 83.6 | 50M | 8.5G | 945 | [config](classification/configs/vHeat/vHeat_small_224.yaml)/[log](#)/[ckpt](#) |
-| vHeat-B | ImageNet-1K | 224x224 | 83.9 | 87M | 14.9G | 661 | [config](classification/configs/vHeat/vHeat_base_224.yaml)/[log](#)/[ckpt](#) |
+| vHeat-S | ImageNet-1K | 224x224 | 83.6 | 50M | 8.5G | 945 | [config](classification/configs/vHeat/vHeat_small_224.yaml)/[log](https://github.com/MzeroMiko/vHeat/releases/download/vheatcls/vHeat_small.txt)/[ckpt](https://github.com/MzeroMiko/vHeat/releases/download/vheatcls/vHeat_small.pth) |
+| vHeat-B | ImageNet-1K | 224x224 | 83.9 | 87M | 14.9G | 661 | [config](classification/configs/vHeat/vHeat_base_224.yaml)/[log](https://github.com/MzeroMiko/vHeat/releases/download/vheatcls/vHeat_base.txt)/[ckpt](https://github.com/MzeroMiko/vHeat/releases/download/vheatcls/vHeat_base.pth) |
 
 * *Models in this subsection is trained from scratch with random or manual initialization.*
 * *Throughput is test on `pytorch2.0 + cuda12.1 + A100 + AMD EPYC 7542 CPU`.*
