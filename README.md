@@ -142,5 +142,15 @@ For more information about detection and segmentation tasks, please refer to the
 
 ***Before training on downstream tasks (detection/segmentation), please run [interpolate4downstream.py](classification/interpolate4downstream.py) to modify the classification pre-trained checkpoint to load for training.***
 
-
+## Citation
+```
+@misc{wang2024vheat,
+      title={vHeat: Building Vision Models upon Heat Conduction}, 
+      author={Zhaozhi Wang and Yue Liu and Yunfan Liu and Hongtian Yu and Yaowei Wang and Qixiang Ye and Yunjie Tian},
+      year={2024},
+      eprint={2405.16555},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
 
