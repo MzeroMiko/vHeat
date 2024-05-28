@@ -11,7 +11,7 @@
 
 <sup>3</sup> Harbin Institute of Technology (Shenzhen)
 
-<sup>*</sup> Equal Contributions
+<sup>*</sup> Equal contribution.
 
 Paper: ([2405.16555](https://arxiv.org/pdf/2405.16555))
 
