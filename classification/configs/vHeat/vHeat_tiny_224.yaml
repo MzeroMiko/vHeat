@@ -5,8 +5,7 @@ MODEL:
   VHEAT:
     EMBED_DIM: 96
     DEPTHS: [ 2, 2, 6, 2 ]
-    LAYER_SCALE: 1.e-5
-    POST_NORM: True
+    POST_NORM: False
 TRAIN:
   BASE_LR: 5.e-4
   WEIGHT_DECAY: 0.08
