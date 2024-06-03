@@ -45,7 +45,7 @@ A fundamental problem in learning robust and expressive visual representations l
 | Backbone | #params | FLOPs | Detector | box mAP | mask mAP | configs/logs/ckpts |
 | :---: | :---: | :---: | :---: | :---: | :---: |:---: |
 | Swin-T | 48M | 267G | MaskRCNN@1x | 42.7| 39.3 |-- |-- |
-| vHeat-T | 53M | 286G | MaskRCNN@1x | 45.1| 41.0 | [config](detection/configs/vheat/mask_rcnn_vssm_fpn_coco_tiny.py)/[log](#)/[ckpt](#) |
+| vHeat-T | 53M | 286G | MaskRCNN@1x | 45.1| 41.2 | [config](detection/configs/vheat/mask_rcnn_vssm_fpn_coco_tiny.py)/[log](https://github.com/MzeroMiko/vHeat/releases/download/vheatdet/vHeat_tiny_det.log)/[ckpt](https://github.com/MzeroMiko/vHeat/releases/download/vheatdet/vHeat_tiny_det.pth) |
 | Swin-S | 69M | 354G | MaskRCNN@1x | 44.8| 40.9 |-- |-- |
 | vHeat-S | 74M | 377G | MaskRCNN@1x | 46.8| 42.3 | [config](detection/configs/vheat/mask_rcnn_vssm_fpn_coco_small.py)/[log](#)/[ckpt](#) |
 | Swin-B | 107M | 496G | MaskRCNN@1x | 46.9| 42.3 |-- |-- |
