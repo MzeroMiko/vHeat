@@ -51,7 +51,9 @@ train_pipeline = [
                     ]]),
     dict(type='PackDetInputs')
 ]
-train_dataloader = dict(dataset=dict(pipeline=train_pipeline))
+
+train_dataloader = dict(dataset=dict(pipeline=train_pipeline), batch_size=2) # as gpus=8
+val_dataloader = dict(batch_size=2)
 
 max_epochs = 36
 train_cfg = dict(max_epochs=max_epochs)
