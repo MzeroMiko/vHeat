@@ -47,13 +47,13 @@ A fundamental problem in learning robust and expressive visual representations l
 | Swin-T | 48M | 267G | MaskRCNN@1x | 42.7| 39.3 |-- |-- |
 | vHeat-T | 53M | 286G | MaskRCNN@1x | 45.1| 41.2 | [config](detection/configs/vheat/mask_rcnn_fpn_coco_tiny.py)/[log](https://github.com/MzeroMiko/vHeat/releases/download/vheatdet/vHeat_tiny_det.log)/[ckpt](https://github.com/MzeroMiko/vHeat/releases/download/vheatdet/vHeat_tiny_det.pth) |
 | Swin-S | 69M | 354G | MaskRCNN@1x | 44.8| 40.9 |-- |-- |
-| vHeat-S | 74M | 377G | MaskRCNN@1x | 46.8| 42.3 | [config](detection/configs/vheat/mask_rcnn_fpn_coco_small.py)/[log](#)/[ckpt](#) |
+| vHeat-S | 74M | 377G | MaskRCNN@1x | 46.8| 42.3 | [config](detection/configs/vheat/mask_rcnn_fpn_coco_small.py)/[log](https://github.com/MzeroMiko/vHeat/releases/download/vheatdet/vHeat_small_det.log)/[ckpt](https://github.com/MzeroMiko/vHeat/releases/download/vheatdet/vHeat_small_det.pth) |
 | Swin-B | 107M | 496G | MaskRCNN@1x | 46.9| 42.3 |-- |-- |
 | vHeat-B | 115M | 526G | MaskRCNN@1x | 47.7 | 43.0 | [config](detection/configs/vheat/mask_rcnn_fpn_coco_base.py)/[log](#)/[ckpt](#) |
 | Swin-T | 48M | 267G | MaskRCNN@3x | 46.0| 41.6 |-- |-- |
 | vHeat-T | 53M | 286G | MaskRCNN@3x | 47.2| 42.4 | [config](detection/configs/vheat/mask_rcnn_fpn_coco_tiny_ms_3x.py)/[log](h#)/[ckpt](#) |
 | Swin-S | 69M | 354G | MaskRCNN@3x | 48.2| 43.2 |-- |-- |
-| vHeat-S | 74M | 377G | MaskRCNN@3x | 48.8| 43.7 | [config](detection/configs/vheat/mask_rcnn_fpn_coco_small_ms_3x.py)/[log](#)/[ckpt](#) |
+| vHeat-S | 74M | 377G | MaskRCNN@3x | 48.8| 43.7 | [config](detection/configs/vheat/mask_rcnn_fpn_coco_small_ms_3x.py)/[log](https://github.com/MzeroMiko/vHeat/releases/download/vheatdet/vHeat_small_det_ms3x.log)/[ckpt](https://github.com/MzeroMiko/vHeat/releases/download/vheatdet/vHeat_small_det_ms3x.pth) |
 
 * *Models in this subsection is initialized from the models trained in `classfication`.*
 
