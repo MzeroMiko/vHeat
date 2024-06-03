@@ -45,15 +45,15 @@ A fundamental problem in learning robust and expressive visual representations l
 | Backbone | #params | FLOPs | Detector | box mAP | mask mAP | configs/logs/ckpts |
 | :---: | :---: | :---: | :---: | :---: | :---: |:---: |
 | Swin-T | 48M | 267G | MaskRCNN@1x | 42.7| 39.3 |-- |-- |
-| vHeat-T | 53M | 286G | MaskRCNN@1x | 45.1| 41.2 | [config](detection/configs/vheat/mask_rcnn_vssm_fpn_coco_tiny.py)/[log](https://github.com/MzeroMiko/vHeat/releases/download/vheatdet/vHeat_tiny_det.log)/[ckpt](https://github.com/MzeroMiko/vHeat/releases/download/vheatdet/vHeat_tiny_det.pth) |
+| vHeat-T | 53M | 286G | MaskRCNN@1x | 45.1| 41.2 | [config](detection/configs/vheat/mask_rcnn_fpn_coco_tiny.py)/[log](https://github.com/MzeroMiko/vHeat/releases/download/vheatdet/vHeat_tiny_det.log)/[ckpt](https://github.com/MzeroMiko/vHeat/releases/download/vheatdet/vHeat_tiny_det.pth) |
 | Swin-S | 69M | 354G | MaskRCNN@1x | 44.8| 40.9 |-- |-- |
-| vHeat-S | 74M | 377G | MaskRCNN@1x | 46.8| 42.3 | [config](detection/configs/vheat/mask_rcnn_vssm_fpn_coco_small.py)/[log](#)/[ckpt](#) |
+| vHeat-S | 74M | 377G | MaskRCNN@1x | 46.8| 42.3 | [config](detection/configs/vheat/mask_rcnn_fpn_coco_small.py)/[log](#)/[ckpt](#) |
 | Swin-B | 107M | 496G | MaskRCNN@1x | 46.9| 42.3 |-- |-- |
-| vHeat-B | 115M | 526G | MaskRCNN@1x | 47.7 | 43.0 | [config](detection/configs/vheat/mask_rcnn_vssm_fpn_coco_base.py)/[log](#)/[ckpt](#) |
+| vHeat-B | 115M | 526G | MaskRCNN@1x | 47.7 | 43.0 | [config](detection/configs/vheat/mask_rcnn_coco_base.py)/[log](#)/[ckpt](#) |
 | Swin-T | 48M | 267G | MaskRCNN@3x | 46.0| 41.6 |-- |-- |
-| vHeat-T | 53M | 286G | MaskRCNN@3x | 47.2| 42.4 | [config](detection/configs/vheat/mask_rcnn_vssm_fpn_coco_tiny1_ms_3x.py)/[log](h#)/[ckpt](#) |
+| vHeat-T | 53M | 286G | MaskRCNN@3x | 47.2| 42.4 | [config](detection/configs/vheat/mask_rcnn_fpn_coco_tiny_ms_3x.py)/[log](h#)/[ckpt](#) |
 | Swin-S | 69M | 354G | MaskRCNN@3x | 48.2| 43.2 |-- |-- |
-| vHeat-S | 74M | 377G | MaskRCNN@3x | 48.8| 43.7 | [config](detection/configs/vheat/mask_rcnn_vssm_fpn_coco_small_ms_3x.py)/[log](#)/[ckpt](#) |
+| vHeat-S | 74M | 377G | MaskRCNN@3x | 48.8| 43.7 | [config](detection/configs/vheat/mask_rcnn_fpn_coco_small_ms_3x.py)/[log](#)/[ckpt](#) |
 
 * *Models in this subsection is initialized from the models trained in `classfication`.*
 
@@ -63,11 +63,11 @@ A fundamental problem in learning robust and expressive visual representations l
 | Backbone | Input|  #params | FLOPs | Segmentor | mIoU(SS) | configs/logs/ckpts |
 | :---: | :---: | :---: | :---: | :---: | :---: |:---: |
 | Swin-T | 512x512 | 60M | 945G | UperNet@160k | 44.4| -- | -- |
-| vHeat-T| 512x512 | 62M | 948G | UperNet@160k | 46.9| [config](segmentation/configs/vheat/upernet_vssm_4xb4-160k_ade20k-512x512_tiny.py)/[log](#)/[ckpt](#) |
+| vHeat-T| 512x512 | 62M | 948G | UperNet@160k | 46.9| [config](segmentation/configs/vheat/upernet_vheat_160k_ade20k_512x512_tiny.py)/[log](#)/[ckpt](#) |
 | Swin-S | 512x512 | 81M | 1039G | UperNet@160k | 47.6| -- | -- |
-| vHeat-S| 512x512 | 82M | 1028G | UperNet@160k | 49.0|[config](segmentation/configs/vheat/upernet_vssm_4xb4-160k_ade20k-512x512_small.py)/[log](#)/[ckpt](#) |
+| vHeat-S| 512x512 | 82M | 1028G | UperNet@160k | 49.0|[config](segmentation/configs/vheat/upernet_vheat_160k_ade20k_512x512_small.py)/[log](#)/[ckpt](#) |
 | Swin-B | 512x512 | 121M | 1188G | UperNet@160k | 48.1|-- |
-| vHeat-B| 512x512 | 129M | 1219G | UperNet@160k | 49.6|[config](segmentation/configs/vheat/upernet_vssm_4xb4-160k_ade20k-512x512_base.py)/[log](#)/[ckpt](#) |
+| vHeat-B| 512x512 | 129M | 1219G | UperNet@160k | 49.6|[config](segmentation/configs/vheat/upernet_vheat_160k_ade20k_512x512_base.py)/[log](#)/[ckpt](#) |
 
 
 * *Models in this subsection is initialized from the models trained in `classfication`.*
