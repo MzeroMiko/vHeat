@@ -67,7 +67,7 @@ A fundamental problem in learning robust and expressive visual representations l
 | Swin-S | 512x512 | 81M | 1039G | UperNet@160k | 47.6 | -- | -- |
 | vHeat-S| 512x512 | 82M | 1028G | UperNet@160k | 49.0 |[config](segmentation/configs/vheat/upernet_vheat_160k_ade20k_512x512_small.py)/[log](#)/[ckpt](#) |
 | Swin-B | 512x512 | 121M | 1188G | UperNet@160k | 48.1 |-- |
-| vHeat-B| 512x512 | 129M | 1219G | UperNet@160k | 49.6 |[config](segmentation/configs/vheat/upernet_vheat_160k_ade20k_512x512_base.py)/[log](#)/[ckpt](#) |
+| vHeat-B| 512x512 | 129M | 1219G | UperNet@160k | 49.6 |[config](segmentation/configs/vheat/upernet_vheat_160k_ade20k_512x512_base.py)/[log](https://github.com/MzeroMiko/vHeat/releases/download/vheatseg/vHeat_base_seg.log)/[ckpt](https://github.com/MzeroMiko/vHeat/releases/download/vheatseg/vHeat_base_seg.pth) |
 
 
 * *Models in this subsection is initialized from the models trained in `classfication`.*
