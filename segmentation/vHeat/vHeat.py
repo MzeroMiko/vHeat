@@ -27,7 +27,7 @@ class to_channels_first(nn.Module):
         super().__init__()
 
     def forward(self, x):
-        return x.permute(0, 3, 1, 2)
+        return x.permute(0, 3, 1, 2).contiguous()
 
 
 class to_channels_last(nn.Module):
@@ -36,7 +36,7 @@ class to_channels_last(nn.Module):
         super().__init__()
 
     def forward(self, x):
-        return x.permute(0, 2, 3, 1)
+        return x.permute(0, 2, 3, 1).contiguous()
     
     
 def build_norm_layer(dim,
