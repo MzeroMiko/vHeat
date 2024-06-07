@@ -49,7 +49,7 @@ A fundamental problem in learning robust and expressive visual representations l
 | Swin-S | 69M | 354G | MaskRCNN@1x | 44.8 | 40.9 |-- |-- |
 | vHeat-S | 74M | 377G | MaskRCNN@1x | 46.8 | 42.3 | [config](detection/configs/vheat/mask_rcnn_fpn_coco_small.py)/[log](https://github.com/MzeroMiko/vHeat/releases/download/vheatdet/vHeat_small_det.log)/[ckpt](https://github.com/MzeroMiko/vHeat/releases/download/vheatdet/vHeat_small_det.pth) |
 | Swin-B | 107M | 496G | MaskRCNN@1x | 46.9 | 42.3 |-- |-- |
-| vHeat-B | 115M | 526G | MaskRCNN@1x | 47.7 | 43.0 | [config](detection/configs/vheat/mask_rcnn_fpn_coco_base.py)/[log](#)/[ckpt](#) |
+| vHeat-B | 115M | 526G | MaskRCNN@1x | 47.7 | 43.0 | [config](detection/configs/vheat/mask_rcnn_fpn_coco_base.py)/[log](https://github.com/MzeroMiko/vHeat/releases/download/vheatdet/vHeat_base_det.log)/[ckpt](https://github.com/MzeroMiko/vHeat/releases/download/vheatdet/vHeat_base_det.pth) |
 | Swin-T | 48M | 267G | MaskRCNN@3x | 46.0 | 41.6 |-- |-- |
 | vHeat-T | 53M | 286G | MaskRCNN@3x | 47.3| 42.5 | [config](detection/configs/vheat/mask_rcnn_fpn_coco_tiny_ms_3x.py)/[log](https://github.com/MzeroMiko/vHeat/releases/download/vheatdet/vHeat_tiny_det_ms3x.log)/[ckpt](https://github.com/MzeroMiko/vHeat/releases/download/vheatdet/vHeat_tiny_det_ms3x.pth) |
 | Swin-S | 69M | 354G | MaskRCNN@3x | 48.2 | 43.2 |-- |-- |
