@@ -36,7 +36,7 @@ A fundamental problem in learning robust and expressive visual representations l
 | vHeat-S | ImageNet-1K | 224x224 | 83.6 | 50M | 8.5G | 945 | [config](classification/configs/vHeat/vHeat_small_224.yaml)/[log](https://github.com/MzeroMiko/vHeat/releases/download/vheatcls/vHeat_small.txt)/[ckpt](https://github.com/MzeroMiko/vHeat/releases/download/vheatcls/vHeat_small.pth) |
 | vHeat-B | ImageNet-1K | 224x224 | 83.9 | 87M | 14.9G | 661 | [config](classification/configs/vHeat/vHeat_base_224.yaml)/[log](https://github.com/MzeroMiko/vHeat/releases/download/vheatcls/vHeat_base.txt)/[ckpt](https://github.com/MzeroMiko/vHeat/releases/download/vheatcls/vHeat_base.pth) |
 
-* *Models in this subsection is trained from scratch with random or manual initialization.*
+* *Models in this subsection are trained from scratch with random or manual initialization.*
 * *Throughput is test on `pytorch2.0 + cuda12.1 + A100 + AMD EPYC 7542 CPU`.*
 * *We use ema because our model is still under development.*
 
@@ -55,7 +55,7 @@ A fundamental problem in learning robust and expressive visual representations l
 | Swin-S | 69M | 354G | MaskRCNN@3x | 48.2 | 43.2 |-- |-- |
 | vHeat-S | 74M | 377G | MaskRCNN@3x | 48.8 | 43.7 | [config](detection/configs/vheat/mask_rcnn_fpn_coco_small_ms_3x.py)/[log](https://github.com/MzeroMiko/vHeat/releases/download/vheatdet/vHeat_small_det_ms3x.log)/[ckpt](https://github.com/MzeroMiko/vHeat/releases/download/vheatdet/vHeat_small_det_ms3x.pth) |
 
-* *Models in this subsection is initialized from the models trained in `classfication`.*
+* *Models in this subsection are initialized from the models trained in `classfication`.*
 
 
 ### **Semantic Segmentation on ADE20K with vHeat**
@@ -63,14 +63,14 @@ A fundamental problem in learning robust and expressive visual representations l
 | Backbone | Input|  #params | FLOPs | Segmentor | mIoU(SS) | configs/logs/ckpts |
 | :---: | :---: | :---: | :---: | :---: | :---: |:---: |
 | Swin-T | 512x512 | 60M | 945G | UperNet@160k | 44.4 | -- | -- |
-| vHeat-T| 512x512 | 62M | 948G | UperNet@160k | 46.9 | [config](segmentation/configs/vheat/upernet_vheat_160k_ade20k_512x512_tiny.py)/[log](#)/[ckpt](#) |
+| vHeat-T| 512x512 | 62M | 948G | UperNet@160k | 47.0 | [config](segmentation/configs/vheat/upernet_vheat_160k_ade20k_512x512_tiny.py)/[log](https://github.com/MzeroMiko/vHeat/releases/download/vheatseg/vHeat_tiny_seg.log)/[ckpt](https://github.com/MzeroMiko/vHeat/releases/download/vheatseg/vHeat_tiny_seg.pth) |
 | Swin-S | 512x512 | 81M | 1039G | UperNet@160k | 47.6 | -- | -- |
 | vHeat-S| 512x512 | 82M | 1028G | UperNet@160k | 49.0 |[config](segmentation/configs/vheat/upernet_vheat_160k_ade20k_512x512_small.py)/[log](#)/[ckpt](#) |
 | Swin-B | 512x512 | 121M | 1188G | UperNet@160k | 48.1 |-- |
 | vHeat-B| 512x512 | 129M | 1219G | UperNet@160k | 49.6 |[config](segmentation/configs/vheat/upernet_vheat_160k_ade20k_512x512_base.py)/[log](https://github.com/MzeroMiko/vHeat/releases/download/vheatseg/vHeat_base_seg.log)/[ckpt](https://github.com/MzeroMiko/vHeat/releases/download/vheatseg/vHeat_base_seg.pth) |
 
 
-* *Models in this subsection is initialized from the models trained in `classfication`.*
+* *Models in this subsection are initialized from the models trained in `classfication`.*
 
 ## Getting Started
 ### Installation
