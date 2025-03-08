@@ -1,7 +1,7 @@
 
 <div align="center">
 <h1>vHeat</h1>
-<h3>vHeat: Building Vision Models upon Heat Conduction</h3>
+<h3>vHeat: Building Vision Models upon Heat Conduction (Accepted by CVPR 2025)</h3>
 
 [ZhaoZhi Wang](https://scholar.google.com/citations?user=CkDanj8AAAAJ&hl=zh-CN&oi=ao)<sup>1,2*</sup>, [Yue Liu](https://github.com/MzeroMiko)<sup>1*</sup>, [Yunfan Liu](https://scholar.google.com.hk/citations?user=YPL33G0AAAAJ&hl=zh-CN&oi=ao)<sup>1</sup>, [Hongtian Yu](https://github.com/yuhongtian17)<sup>1</sup>, 
 
