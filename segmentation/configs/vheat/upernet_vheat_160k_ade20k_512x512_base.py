@@ -1,5 +1,5 @@
 _base_ = [
-    './configs/swin/swin-base-patch4-window7-in1k-pre_upernet_8xb2-160k_ade20k-512x512.py'
+    '../swin/swin-base-patch4-window7-in1k-pre_upernet_8xb2-160k_ade20k-512x512.py'
 ]
 
 crop_size = (512, 512)
