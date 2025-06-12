@@ -145,13 +145,13 @@ For more information about detection and segmentation tasks, please refer to the
 
 ## Citation
 ```
-@misc{wang2024vheat,
-      title={vHeat: Building Vision Models upon Heat Conduction}, 
-      author={Zhaozhi Wang and Yue Liu and Yunfan Liu and Hongtian Yu and Yaowei Wang and Qixiang Ye and Yunjie Tian},
-      year={2024},
-      eprint={2405.16555},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@InProceedings{Wang_2025_CVPR,
+    author    = {Wang, Zhaozhi and Liu, Yue and Tian, Yunjie and Liu, Yunfan and Wang, Yaowei and Ye, Qixiang},
+    title     = {Building Vision Models upon Heat Conduction},
+    booktitle = {Proceedings of the Computer Vision and Pattern Recognition Conference (CVPR)},
+    month     = {June},
+    year      = {2025},
+    pages     = {9707-9717}
 }
 ```
 
